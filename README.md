@@ -34,7 +34,7 @@ CIS 1.4, 1.5, 1.10, 3.1, 3.3, 4.1, 4.2 — runs programmatically via Lambda, fin
 
 ## Architecture
 
-![CloudGuard Pro Architecture](docs/cloudguard_architecture.svg)
+![CloudGuard Pro Architecture](docs/cloudguard_architecture.jpg)
 
 ```
 AWS API Call (any resource)

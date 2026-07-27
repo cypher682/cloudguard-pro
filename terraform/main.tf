@@ -57,10 +57,10 @@ module "eventbridge" {
   security_hub_sync_lambda_arn = var.security_hub_sync_lambda_arn
 }
 
-# module "config_rules" {
-#   source = "./modules/config-rules"
-# }
+module "config_rules" {
+  source = "./modules/config-rules"
+}
 
-# module "security_hub" {
-#   source = "./modules/security-hub"
-# }
+module "security_hub" {
+  source = "./modules/security-hub"
+}
