@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="940" viewBox="0 0 1400 940" font-family="'Segoe UI', Inter, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="ctGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a0f"/>
+      <stop offset="100%" style="stop-color:#3a2f0a"/>
+    </linearGradient>
+    <linearGradient id="ebGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0f2e"/>
+      <stop offset="100%" style="stop-color:#2d1a50"/>
+    </linearGradient>
+    <linearGradient id="ebCustomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a0f3e"/>
+      <stop offset="100%" style="stop-color:#4a1a70"/>
+    </linearGradient>
+    <linearGradient id="lambdaGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2a1a"/>
+      <stop offset="100%" style="stop-color:#1a4f2d"/>
+    </linearGradient>
+    <linearGradient id="lambdaRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0a"/>
+      <stop offset="100%" style="stop-color:#3a1515"/>
+    </linearGradient>
+    <linearGradient id="dynamoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1f3a"/>
+      <stop offset="100%" style="stop-color:#1a3560"/>
+    </linearGradient>
+    <linearGradient id="snsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a0f1a"/>
+      <stop offset="100%" style="stop-color:#5e1a2e"/>
+    </linearGradient>
+    <linearGradient id="layerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f0a"/>
+      <stop offset="100%" style="stop-color:#2e3510"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f87171"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrowPink" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f472b6"/>
+    </marker>
+    <marker id="arrowCyan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="940" fill="url(#bg)"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1400" height="72" fill="#0d1117" opacity="0.8"/>
+  <text x="700" y="32" fill="#f0f6ff" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="1">cloudguard-pro</text>
+  <text x="700" y="56" fill="#8b949e" font-size="13" text-anchor="middle">Event-Driven AWS Security Automation · Real-Time Detection and Auto-Remediation</text>
+
+  <!-- ===== ROW 1: ANY AWS API CALL ===== -->
+  <rect x="560" y="85" width="280" height="50" rx="8" fill="#1a1f2e" stroke="#374151" stroke-width="1.5"/>
+  <text x="700" y="106" fill="#9ca3af" font-size="11" text-anchor="middle" font-weight="600" letter-spacing="1">ANY AWS API CALL</text>
+  <text x="700" y="124" fill="#6b7280" font-size="10" text-anchor="middle">CreateSecurityGroup · DeletePublicAccessBlock · CreateLoginProfile</text>
+
+  <!-- API Call to CloudTrail -->
+  <line x1="700" y1="135" x2="700" y2="158" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- ===== ROW 2: CloudTrail ===== -->
+  <rect x="530" y="160" width="340" height="60" rx="8" fill="url(#ctGrad)" stroke="#d97706" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="548" y="180" fill="#d97706" font-size="9" font-weight="700" letter-spacing="1">AWS CLOUDTRAIL</text>
+  <text x="700" y="198" fill="#fbbf24" font-size="13" font-weight="700" text-anchor="middle">Management Events Trail</text>
+  <text x="700" y="213" fill="#92400e" font-size="10" text-anchor="middle">All-regions · log file validation enabled</text>
+
+  <!-- CloudTrail to EventBridge Default -->
+  <line x1="700" y1="220" x2="700" y2="246" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <text x="716" y="238" fill="#6b7280" font-size="9">auto-delivery</text>
+
+  <!-- ===== ROW 3: EventBridge Default Bus ===== -->
+  <rect x="500" y="248" width="400" height="56" rx="8" fill="url(#ebGrad)" stroke="#7c3aed" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="518" y="268" fill="#7c3aed" font-size="9" font-weight="700" letter-spacing="1">AMAZON EVENTBRIDGE</text>
+  <text x="700" y="286" fill="#c4b5fd" font-size="13" font-weight="700" text-anchor="middle">Default Event Bus</text>
+  <text x="700" y="299" fill="#4c1d95" font-size="10" text-anchor="middle">CloudTrail events land here by default</text>
+
+  <!-- Default Bus to Custom Bus -->
+  <line x1="700" y1="304" x2="700" y2="330" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <text x="716" y="323" fill="#6b7280" font-size="9">forwarding rule</text>
+
+  <!-- ===== ROW 4: Custom EventBridge Bus ===== -->
+  <rect x="450" y="332" width="500" height="56" rx="8" fill="url(#ebCustomGrad)" stroke="#9333ea" stroke-width="2" filter="url(#shadow)"/>
+  <text x="468" y="352" fill="#9333ea" font-size="9" font-weight="700" letter-spacing="1">CUSTOM EVENT BUS</text>
+  <text x="700" y="372" fill="#d8b4fe" font-size="14" font-weight="700" text-anchor="middle">cloudguard-pro-bus</text>
+  <text x="700" y="385" fill="#6d28d9" font-size="10" text-anchor="middle">5 detection rules · isolated from default bus traffic</text>
+
+  <!-- ===== Fan-out arrows from custom bus to 4 Lambdas ===== -->
+  <!-- event-ingestor -->
+  <line x1="510" y1="388" x2="135" y2="480" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <!-- sg-remediator -->
+  <line x1="590" y1="388" x2="380" y2="480" stroke="#f87171" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  <!-- s3-remediator -->
+  <line x1="700" y1="388" x2="650" y2="480" stroke="#f87171" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  <!-- iam-remediator -->
+  <line x1="810" y1="388" x2="920" y2="480" stroke="#f87171" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+
+  <!-- Arrow labels -->
+  <text x="290" y="442" fill="#6b7280" font-size="9" text-anchor="middle">all events</text>
+  <text x="468" y="442" fill="#6b7280" font-size="9" text-anchor="middle">EC2 SG changes</text>
+  <text x="670" y="442" fill="#6b7280" font-size="9" text-anchor="middle">S3 block events</text>
+  <text x="850" y="442" fill="#6b7280" font-size="9" text-anchor="middle">IAM login events</text>
+
+  <!-- ===== ROW 5: 4 Event Lambdas ===== -->
+
+  <!-- event-ingestor -->
+  <rect x="18" y="482" width="234" height="90" rx="8" fill="url(#lambdaGreenGrad)" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="34" y="500" fill="#059669" font-size="9" font-weight="700" letter-spacing="1">LAMBDA</text>
+  <text x="135" y="518" fill="#6ee7b7" font-size="12" font-weight="700" text-anchor="middle">event-ingestor</text>
+  <text x="135" y="532" fill="#6b7280" font-size="9" text-anchor="middle">All CloudTrail events</text>
+  <text x="135" y="545" fill="#6b7280" font-size="9" text-anchor="middle">Classify severity → Finding</text>
+  <text x="135" y="558" fill="#f87171" font-size="9" text-anchor="middle">Root usage: CRITICAL alert</text>
+  <text x="135" y="570" fill="#fbbf24" font-size="9" text-anchor="middle">S3 policy change: HIGH flag</text>
+
+  <!-- sg-remediator -->
+  <rect x="262" y="482" width="218" height="90" rx="8" fill="url(#lambdaRedGrad)" stroke="#dc2626" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="278" y="500" fill="#dc2626" font-size="9" font-weight="700" letter-spacing="1">LAMBDA · REMEDIATE</text>
+  <text x="371" y="518" fill="#fca5a5" font-size="12" font-weight="700" text-anchor="middle">sg-remediator</text>
+  <text x="371" y="532" fill="#6b7280" font-size="9" text-anchor="middle">Port 22/3389 open to 0.0.0.0/0</text>
+  <text x="371" y="545" fill="#fca5a5" font-size="9" font-weight="600" text-anchor="middle">Revoke rule immediately</text>
+  <text x="371" y="558" fill="#6b7280" font-size="9" text-anchor="middle">ec2:RevokeSecurityGroupIngress</text>
+  <text x="371" y="570" fill="#34d399" font-size="9" text-anchor="middle">60s from trigger to revoke</text>
+
+  <!-- s3-remediator -->
+  <rect x="492" y="482" width="218" height="90" rx="8" fill="url(#lambdaRedGrad)" stroke="#dc2626" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="508" y="500" fill="#dc2626" font-size="9" font-weight="700" letter-spacing="1">LAMBDA · REMEDIATE</text>
+  <text x="601" y="518" fill="#fca5a5" font-size="12" font-weight="700" text-anchor="middle">s3-remediator</text>
+  <text x="601" y="532" fill="#6b7280" font-size="9" text-anchor="middle">Public access block removed</text>
+  <text x="601" y="545" fill="#fca5a5" font-size="9" font-weight="600" text-anchor="middle">Re-enable block</text>
+  <text x="601" y="558" fill="#fbbf24" font-size="9" text-anchor="middle">Policy/ACL: flag HIGH only</text>
+  <text x="601" y="570" fill="#6b7280" font-size="9" text-anchor="middle">Conservative scope</text>
+
+  <!-- iam-remediator -->
+  <rect x="722" y="482" width="218" height="90" rx="8" fill="url(#lambdaRedGrad)" stroke="#dc2626" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="738" y="500" fill="#dc2626" font-size="9" font-weight="700" letter-spacing="1">LAMBDA · REMEDIATE</text>
+  <text x="831" y="518" fill="#fca5a5" font-size="12" font-weight="700" text-anchor="middle">iam-remediator</text>
+  <text x="831" y="532" fill="#6b7280" font-size="9" text-anchor="middle">Console access + no MFA</text>
+  <text x="831" y="545" fill="#fca5a5" font-size="9" font-weight="600" text-anchor="middle">Delete login profile</text>
+  <text x="831" y="558" fill="#6b7280" font-size="9" text-anchor="middle">iam:DeleteLoginProfile</text>
+  <text x="831" y="570" fill="#34d399" font-size="9" text-anchor="middle">30s from trigger to disable</text>
+
+  <!-- ===== Shared Layer Panel ===== -->
+  <rect x="960" y="482" width="420" height="90" rx="8" fill="url(#layerGrad)" stroke="#84cc16" stroke-width="1.5" stroke-dasharray="6,3" filter="url(#shadow)"/>
+  <text x="976" y="500" fill="#84cc16" font-size="9" font-weight="700" letter-spacing="1">SHARED LAMBDA LAYER</text>
+  <text x="1170" y="518" fill="#bef264" font-size="12" font-weight="700" text-anchor="middle">cloudguard-shared</text>
+  <text x="1170" y="533" fill="#4d7c0f" font-size="10" text-anchor="middle">models.py — Finding dataclass (Severity, FindingStatus, FindingSource)</text>
+  <text x="1170" y="547" fill="#4d7c0f" font-size="10" text-anchor="middle">dynamo_client.py — FindingsTable: put_finding(), update_finding_status()</text>
+  <text x="1170" y="561" fill="#4d7c0f" font-size="10" text-anchor="middle">logger.py — structured JSON logging</text>
+  <text x="1170" y="575" fill="#6b7280" font-size="9" text-anchor="middle">All 7 Lambdas share this layer · single data contract · no raw dict juggling</text>
+
+  <!-- Layer shared indicator -->
+  <line x1="960" y1="527" x2="940" y2="527" stroke="#84cc16" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="940" y1="482" x2="940" y2="527" stroke="#84cc16" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- ===== Arrows: Lambdas → DynamoDB ===== -->
+  <!-- Horizontal collector line -->
+  <line x1="135" y1="572" x2="135" y2="660" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="135" y1="660" x2="560" y2="660" stroke="#60a5fa" stroke-width="1.5"/>
+
+  <line x1="371" y1="572" x2="371" y2="660" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="371" y1="660" x2="560" y2="660" stroke="#60a5fa" stroke-width="1.5"/>
+
+  <line x1="601" y1="572" x2="601" y2="660" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="601" y1="660" x2="680" y2="660" stroke="#60a5fa" stroke-width="1.5"/>
+
+  <line x1="831" y1="572" x2="831" y2="660" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="831" y1="660" x2="820" y2="660" stroke="#60a5fa" stroke-width="1.5"/>
+
+  <!-- Main arrow into DynamoDB -->
+  <line x1="680" y1="660" x2="680" y2="686" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="695" y="658" fill="#6b7280" font-size="9">write Finding record</text>
+
+  <!-- ===== DynamoDB ===== -->
+  <rect x="540" y="688" width="280" height="86" rx="8" fill="url(#dynamoGrad)" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+  <text x="558" y="707" fill="#2563eb" font-size="9" font-weight="700" letter-spacing="1">AMAZON DYNAMODB</text>
+  <text x="680" y="725" fill="#93c5fd" font-size="13" font-weight="700" text-anchor="middle">cloudguard-findings</text>
+  <text x="680" y="740" fill="#1d4ed8" font-size="9" text-anchor="middle">PK: finding_id · SK: created_at</text>
+  <text x="680" y="753" fill="#1d4ed8" font-size="9" text-anchor="middle">GSI: severity-index · GSI: service-index</text>
+  <text x="680" y="766" fill="#60a5fa" font-size="9" text-anchor="middle">PAY_PER_REQUEST · Streams enabled (INSERT only)</text>
+
+  <!-- DynamoDB Streams to finding-notifier -->
+  <line x1="820" y1="731" x2="1020" y2="731" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <text x="920" y="724" fill="#0e7490" font-size="9" text-anchor="middle">DynamoDB Streams</text>
+
+  <!-- ===== finding-notifier Lambda ===== -->
+  <rect x="1020" y="688" width="240" height="86" rx="8" fill="url(#lambdaGreenGrad)" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1036" y="707" fill="#059669" font-size="9" font-weight="700" letter-spacing="1">LAMBDA · STREAMS TRIGGER</text>
+  <text x="1140" y="725" fill="#6ee7b7" font-size="12" font-weight="700" text-anchor="middle">finding-notifier</text>
+  <text x="1140" y="739" fill="#6b7280" font-size="9" text-anchor="middle">Fires on every DynamoDB INSERT</text>
+  <text x="1140" y="752" fill="#6b7280" font-size="9" text-anchor="middle">Formats finding → SNS publish</text>
+  <text x="1140" y="765" fill="#6b7280" font-size="9" text-anchor="middle">Subject includes severity level</text>
+
+  <!-- finding-notifier to SNS -->
+  <line x1="1140" y1="774" x2="1140" y2="808" stroke="#f472b6" stroke-width="2" marker-end="url(#arrowPink)"/>
+
+  <!-- ===== SNS ===== -->
+  <rect x="1020" y="810" width="240" height="70" rx="8" fill="url(#snsGrad)" stroke="#be185d" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1036" y="829" fill="#be185d" font-size="9" font-weight="700" letter-spacing="1">AMAZON SNS</text>
+  <text x="1140" y="847" fill="#fbcfe8" font-size="12" font-weight="700" text-anchor="middle">cloudguard-alerts</text>
+  <text x="1140" y="861" fill="#9d174d" font-size="9" text-anchor="middle">Email subscription confirmed</text>
+  <text x="1140" y="875" fill="#f472b6" font-size="9" text-anchor="middle">[CRITICAL] [HIGH] [MEDIUM] [INFO]</text>
+
+  <!-- ===== SCHEDULED LAMBDAS: Left side ===== -->
+
+  <!-- CloudWatch Events box -->
+  <rect x="18" y="615" width="220" height="52" rx="8" fill="#161b22" stroke="#374151" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="36" y="634" fill="#6b7280" font-size="9" font-weight="700" letter-spacing="1">CLOUDWATCH EVENTS</text>
+  <text x="128" y="651" fill="#9ca3af" font-size="11" font-weight="700" text-anchor="middle">Scheduled Triggers</text>
+  <text x="128" y="662" fill="#6b7280" font-size="9" text-anchor="middle">Every 6h · Once daily</text>
+
+  <!-- Schedule to cis-scanner -->
+  <line x1="78" y1="667" x2="78" y2="808" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowGray)"/>
+
+  <!-- Schedule to security-hub-sync -->
+  <line x1="168" y1="667" x2="348" y2="808" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowGray)"/>
+
+  <!-- cis-scanner -->
+  <rect x="18" y="810" width="216" height="90" rx="8" fill="url(#lambdaGreenGrad)" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="34" y="828" fill="#059669" font-size="9" font-weight="700" letter-spacing="1">LAMBDA · EVERY 6H</text>
+  <text x="126" y="846" fill="#6ee7b7" font-size="12" font-weight="700" text-anchor="middle">cis-scanner</text>
+  <text x="126" y="860" fill="#6b7280" font-size="9" text-anchor="middle">CIS 1.4, 1.5, 1.10</text>
+  <text x="126" y="873" fill="#6b7280" font-size="9" text-anchor="middle">CIS 3.1, 3.3, 4.1, 4.2</text>
+  <text x="126" y="886" fill="#6ee7b7" font-size="9" text-anchor="middle">DETECTED / ACKNOWLEDGED</text>
+
+  <!-- cis-scanner to DynamoDB -->
+  <line x1="234" y1="855" x2="540" y2="755" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowBlue)"/>
+
+  <!-- security-hub-sync -->
+  <rect x="246" y="810" width="216" height="90" rx="8" fill="url(#lambdaGreenGrad)" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="262" y="828" fill="#059669" font-size="9" font-weight="700" letter-spacing="1">LAMBDA · DAILY</text>
+  <text x="354" y="846" fill="#6ee7b7" font-size="12" font-weight="700" text-anchor="middle">security-hub-sync</text>
+  <text x="354" y="860" fill="#6b7280" font-size="9" text-anchor="middle">Pull Security Hub findings</text>
+  <text x="354" y="873" fill="#6b7280" font-size="9" text-anchor="middle">GuardDuty · Inspector · Config</text>
+  <text x="354" y="886" fill="#6b7280" font-size="9" text-anchor="middle">Unified DynamoDB view</text>
+
+  <!-- security-hub-sync to DynamoDB -->
+  <line x1="462" y1="855" x2="545" y2="760" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowBlue)"/>
+
+  <!-- ===== IaC Split Panel ===== -->
+  <rect x="490" y="810" width="510" height="100" rx="8" fill="#0d1117" stroke="#21262d" stroke-width="1.5"/>
+  <text x="510" y="830" fill="#8b949e" font-size="10" font-weight="700" letter-spacing="1">IaC SPLIT — TWO-PHASE DEPLOY</text>
+
+  <rect x="506" y="836" width="228" height="62" rx="6" fill="#1a1020" stroke="#7c3aed" stroke-width="1"/>
+  <text x="520" y="853" fill="#7c3aed" font-size="9" font-weight="700">TERRAFORM — Phase 1</text>
+  <text x="620" y="868" fill="#6d28d9" font-size="9" text-anchor="middle">EventBridge bus + rules</text>
+  <text x="620" y="881" fill="#6d28d9" font-size="9" text-anchor="middle">DynamoDB + SNS + Config</text>
+  <text x="620" y="894" fill="#6d28d9" font-size="9" text-anchor="middle">Security Hub + state backend</text>
+
+  <rect x="746" y="836" width="228" height="62" rx="6" fill="#0f2010" stroke="#059669" stroke-width="1"/>
+  <text x="760" y="853" fill="#059669" font-size="9" font-weight="700">PULUMI Python — Phase 2</text>
+  <text x="860" y="868" fill="#047857" font-size="9" text-anchor="middle">7 Lambda functions</text>
+  <text x="860" y="881" fill="#047857" font-size="9" text-anchor="middle">7 IAM execution roles</text>
+  <text x="860" y="894" fill="#047857" font-size="9" text-anchor="middle">Lambda Layer + EB permissions</text>
+
+  <!-- ===== Bottom stats bar ===== -->
+  <rect x="0" y="924" width="1400" height="16" fill="#161b22"/>
+  <text x="700" y="935" fill="#374151" font-size="9" text-anchor="middle">70 tests · 87% coverage · pytest + moto · Bandit · Checkov · GitHub Actions · Zero live AWS required for development</text>
+</svg>

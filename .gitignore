@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.venv/
+venv/
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+.terraform.lock.hcl
+terraform/out.json
+
+# Pulumi
+Pulumi.*.yaml
+!Pulumi.yaml
+.pulumi/
+.pulumi-build/
+
+# Lambda build artifacts
+lambdas/*/package/
+lambdas/*/*.zip
+lambdas/*/.aws-sam/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Evidence (binary screenshots tracked manually, large logs ignored)
+docs/evidence/*.log

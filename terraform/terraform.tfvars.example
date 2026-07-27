@@ -1,0 +1,6 @@
+# Copy to terraform.tfvars and fill in real values ONLY during the AWS sprint.
+# terraform.tfvars is gitignored.
+
+aws_region           = "us-east-1"
+findings_table_name  = "cloudguard-findings"
+alert_email          = "replace-with-your-email@example.com"

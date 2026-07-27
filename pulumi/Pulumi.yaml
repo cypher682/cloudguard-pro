@@ -1,0 +1,10 @@
+name: cloudguard-pro-lambdas
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: >
+  Pulumi module for cloudguard-pro: Lambda functions and their IAM
+  execution roles. Terraform owns all other infrastructure (EventBridge,
+  DynamoDB, SNS, Config, Security Hub). This split is intentional — see
+  docs/iac-comparison.md.

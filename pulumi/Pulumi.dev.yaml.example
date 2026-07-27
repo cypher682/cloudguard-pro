@@ -1,0 +1,20 @@
+# Pulumi.dev.yaml — stack config for the dev/sprint environment.
+# Copy to Pulumi.dev.yaml and fill in real values after `terraform apply`.
+# This file is gitignored (see .gitignore Pulumi.*.yaml pattern).
+# Pulumi.yaml itself IS committed (it's the project manifest, not secrets).
+
+config:
+  aws:region: us-east-1
+  cloudguard-pro-lambdas:awsRegion: us-east-1
+  cloudguard-pro-lambdas:awsAccountId: "REPLACE_AT_SPRINT_TIME"
+  cloudguard-pro-lambdas:findingsTableArn: "REPLACE_FROM_TF_OUTPUT_findings_table_arn"
+  cloudguard-pro-lambdas:findingsTableName: "REPLACE_FROM_TF_OUTPUT_findings_table_name"
+  cloudguard-pro-lambdas:findingsStreamArn: "REPLACE_FROM_TF_OUTPUT_findings_table_stream_arn"
+  cloudguard-pro-lambdas:snsTopicArn: "REPLACE_FROM_TF_OUTPUT_sns_topic_arn"
+  cloudguard-pro-lambdas:eventBridgeBusArn: "REPLACE_FROM_TF_OUTPUT_eventbridge_bus_arn"
+  cloudguard-pro-lambdas:ruleArnAllEvents: "REPLACE_FROM_TF_OUTPUT_all_events_rule_arn"
+  cloudguard-pro-lambdas:ruleArnSgChanges: "REPLACE_FROM_TF_OUTPUT_sg_changes_rule_arn"
+  cloudguard-pro-lambdas:ruleArnS3PolicyChanges: "REPLACE_FROM_TF_OUTPUT_s3_policy_changes_rule_arn"
+  cloudguard-pro-lambdas:ruleArnIamChanges: "REPLACE_FROM_TF_OUTPUT_iam_changes_rule_arn"
+  cloudguard-pro-lambdas:ruleArnCisScanSchedule: "REPLACE_FROM_TF_OUTPUT_cis_scan_schedule_rule_arn"
+  cloudguard-pro-lambdas:ruleArnShSyncSchedule: "REPLACE_FROM_TF_OUTPUT_security_hub_sync_schedule_rule_arn"
